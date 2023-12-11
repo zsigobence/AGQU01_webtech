@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SPIKE PRIME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="LEGO robots.">
+        <meta name="author" content="Zsigó Bence">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <ul class="navbar">
+            <li class="nav-items">
+        <a href=index.html>Main page</a>
+            </li>
+            <li class="nav-items">
+        <a href=otherrobots.html>Other robots</a>
+            </li>
+            <li class="nav-items">
+        <a href=registration.html class="active">Registration</a>
+            </li>
+            <li class="nav-items">
+        <a href=sensorsandmotors.html>Sensors and motors</a>
+            </li>
+    </ul>
+
+        <div class="header">
+
+        <div>
+            <h1 id="headertext">LEGO<br>SPIKE PRIME</h1>
+        </div>
+
+        <div class="logo">
+            <img id="legologo" src="images/lego-logo.png">    
+        </div>
+
+        </div>
+
+        <div class="content">
+            <form>
+            
+                <label>Firstname</label> <input type="text" id="firstname">
+                <br><br>
+            
+           
+                <label>Lastname</label> <input type="text" id="lastname">
+                <br><br>
+            
+            
+                <label>Check the box which one do you prefer?(you can check multiple boxes)</label> <br>
+                <input type="checkbox" class="checkbox" id="build">Building
+                <br>
+                <input type="checkbox" class="checkbox" id="program">Programming 
+                <br>
+                <input type="checkbox" class="checkbox" id="play">Playing 
+                <br><br>
+            
+                <label>How much do you like LEGO?(from 1-5)
+                <br>
+                1<input type="radio" id="one" name="likelego">
+                <br>
+                2<input type="radio" id="two" name="likelego">
+                <br>
+                3<input type="radio" id="three" name="likelego">
+                <br>
+                4<input type="radio" id="four" name="likelego">
+                <br>
+                5<input type="radio" id="five" name="likelego" checked>
+                <br><br>
+            
+            
+                <label>When the last time you played or programmed LEGO?</label>
+                <br>
+                <input type="date" id="date">
+                <br><br>
+            
+
+            
+                <label>Why do you like LEGO?</label>
+                <br>
+                <textarea id="legolike" rows="5" cols="30"></textarea>
+                <br><br>
+
+                <label>Choose a color for the page</label>
+                <input id="colorpicker" type="color">
+                <br>
+                <input type="button" class="myButton" id="colorbutton" value="Color the page">
+                <input type="button" class="myButton" id="submit" value="Submit anwers">
+
+            </form>
+        </div>
+    </body>
+
+</html>

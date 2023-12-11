@@ -1,0 +1,130 @@
+body {
+    background-color:rgb(244, 196, 191);
+    margin: 0px;
+}
+
+.header{
+    background-color:red;
+    display: flex;
+    justify-content:space-between;
+    height: 125px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width:100%;
+    z-index: 100;
+}
+
+#headertext{
+    color:white;
+    font-family: cursive;
+    margin: 20px;
+}
+
+#legologo {
+    height: 125px;
+    animation: rotateAnimation 0.5s ease;
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(251, 102, 102);
+    position: fixed;
+    top: 125px;
+    left: 0%;
+    width:100%;
+    z-index: 100;
+}
+
+.nav-items{
+    float:left;
+}
+
+.active {
+    background-color: rgb(255, 0, 0); 
+}
+
+
+.nav-items > a:hover{
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 30px;
+}
+
+.nav-items > a{   
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 14px 16px;
+}
+
+.content {
+    margin-top: 175px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#driving_base{
+    position: relative;
+    place-self: right;
+}
+
+
+
+.table{
+    width: 100%;
+    border-collapse: collapse;
+    justify-content: center;
+}
+
+.table tr, .table td, .table th  {
+    padding: 10px;
+    text-align: center;
+}
+
+.table ul, .table li {
+    list-style-type: none;
+}
+
+.table img {
+    max-height: 200px;
+    max-width: 400px;
+}
+
+.myButton {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #000000; 
+    color: #000000; 
+    background-color: white; 
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
+  }
+
+  .myButton:hover {
+    background-color: #f90000; 
+    color: white; 
+  }
+
+@keyframes rotateAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SPIKE PRIME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="description" content="LEGO robots.">
+        <meta name="author" content="Zsigó Bence">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>
+
+    <body>
+        <ul class="navbar">
+            <li class="nav-items">
+        <a href=index.html>Main page</a>
+            </li>
+            <li class="nav-items">
+        <a href=otherrobots.html class="active">Other robots</a>
+            </li>
+            <li class="nav-items">
+        <a href=registration.html>Registration</a>
+            </li>
+            <li class="nav-items">
+        <a href=sensorsandmotors.html>Sensors and motors</a>
+            </li>
+    </ul>
+
+        <div class="header">
+
+        <div>
+            <h1 id="headertext">LEGO<br>SPIKE PRIME</h1>
+        </div>
+
+        <div class="logo">
+            <img id="legologo" src="images/lego-logo.png">    
+        </div>
+
+        </div>
+
+        <div class="content">
+            <button id="createList" class="myButton">További típusok</button>
+            <div id="listContainer">
+
+            </div>
+        </div>
+        <script>
+            document.getElementById('createList').addEventListener('click', function() {
+                createLists();
+            });
+    
+            function createLists() {
+                var listContainer = document.getElementById('listContainer');
+
+                var orderedList = document.createElement('ol');
+                listContainer.appendChild(orderedList);
+
+                var listItem1 = document.createElement('li');
+                listItem1.textContent = 'Wedo';
+                orderedList.appendChild(listItem1);
+
+                var listItem2 = document.createElement('li');
+                listItem2.textContent = 'Mindstorms';
+                orderedList.appendChild(listItem2);
+
+                var listItem3 = document.createElement('li');
+                listItem3.textContent = 'EV3';
+                orderedList.appendChild(listItem3);
+
+                var listItem4 = document.createElement('li');
+                listItem4.textContent = 'Spike';
+                orderedList.appendChild(listItem4);
+
+                var unorderedList = document.createElement('ul');
+                listContainer.appendChild(unorderedList);
+
+                var listItemA = document.createElement('li');
+                listItemA.textContent = 'Essential';
+                unorderedList.appendChild(listItemA);
+
+                var listItemB = document.createElement('li');
+                listItemB.textContent = 'Prime';
+                unorderedList.appendChild(listItemB);
+
+                listItem4.appendChild(unorderedList);
+
+                orderedList.appendChild(lastItem);
+            }
+
+        </script>
+    </body>
+
+</html>
